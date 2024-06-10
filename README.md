@@ -85,6 +85,21 @@ And changing language can be seen here:
 ```
 it will also refresh the text on the entire page
 
+if you contain your language assets on a separate server, LangR can handle that as well
+```html
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            LangR.init({
+                rootPath: "langs",
+                currentKey: "en_us",
+                bigPath: "http://mycdn.domain.tld/langs"
+            });
+        });
+    </script>
+```
+however, in here, the rootPath isn't relevant, here we will need to define the full url.
+
+
 we use the **langr-key** attribute to tell the language manager the language key.
 
 
