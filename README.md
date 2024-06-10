@@ -24,3 +24,4 @@ root/
 └── index.html
 
 with the code avobe it will look for: **langs**/**en_us**.json
+
