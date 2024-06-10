@@ -4,7 +4,7 @@ LangR is a lightweight front-end language manager for html written fully in java
 
 Get started:
 Copy this code into the **head** tag:
-```
+```javascript
 <script src="https://raw.githubusercontent.com/ebotdabest/LangR/master/main.js"></script>
 <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -28,7 +28,7 @@ root/
 
 with the code avobe it will look for: **langs**/**en_us**.json
 An example of a english language json:
-```
+```json
 {
   "index.topbar": "Main site",
   "index.buttons.first": "I'm the first button",
@@ -37,7 +37,7 @@ An example of a english language json:
 }
 ```
 and another in italian (i used google translate):
-```
+```json
 {
   "index.topbar": "Pagina principale",
   "index.buttons.first": "Sono il primo pulsante",
@@ -48,7 +48,7 @@ and another in italian (i used google translate):
 however we need to make sure key's stay consistent.
 
 Example use in html:
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
