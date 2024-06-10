@@ -1,4 +1,4 @@
-class LangR {
+export class LangR {
     static init(args) {
         this.path = args.rootPath;
         this.key = args.currentKey;
