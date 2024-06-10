@@ -74,6 +74,17 @@ Example use in html:
 </html>
 ```
 
+And changing language can be seen here:
+```html
+<body>
+    <h1 langr-key="index.random-text">I will contain random text</h1>
+
+    <button onclick="LangR.changeLang('en_us')" langr-key="buttons.switch.en">Switch to english</button>
+    <button onclick="LangR.changeLang('hu_hu')" langr-key="buttons.switch.en">Switch to hungarian</button>
+</body>
+```
+it will also refresh the text on the entire page
+
 we use the **langr-key** attribute to tell the language manager the language key.
 
 
