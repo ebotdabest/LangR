@@ -80,7 +80,7 @@ And changing language can be seen here:
     <h1 langr-key="index.random-text">I will contain random text</h1>
 
     <button onclick="LangR.changeLang('en_us')" langr-key="buttons.switch.en">Switch to english</button>
-    <button onclick="LangR.changeLang('hu_hu')" langr-key="buttons.switch.en">Switch to hungarian</button>
+    <button onclick="LangR.changeLang('hu_hu')" langr-key="buttons.switch.hu">Switch to hungarian</button>
 </body>
 ```
 it will also refresh the text on the entire page
