@@ -2,7 +2,7 @@
 
 LangR is a lightweight front-end language manager for html written fully in javascript
 </br>
-Visit a demo here: (https://ebotdabest.github.io/LangR/demo)[https://ebotdabest.github.io/LangR/demo]
+Visit a demo here: [https://ebotdabest.github.io/LangR/demo](https://ebotdabest.github.io/LangR/demo)
 
 # Get started
 Copy this code into the **head** tag:
