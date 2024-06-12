@@ -103,7 +103,23 @@ if you contain your language assets on a separate server, LangR can handle that 
         });
 </script>
 ```
-however, in here, the rootPath isn't relevant, here we will need to define the full url.
+however, in here, the rootPath isn't relevant, we will need to define the full url.
+
+# Debugging
+another option is the **forceRename** by default this is set to *false*. If we change it to *true*
+```javascript
+<script type="module">
+        import { LangR } from 'https://ebotdabest.github.io/LangR/langr.js';
+        document.addEventListener("DOMContentLoaded", function () {
+            LangR.init({
+                rootPath: "langs",
+                currentKey: "en_us",
+                forceRename: true
+            });
+        });
+    </script>
+```
+then if the **langr-key** is not found instead of leaving the tag alone it will say: `Key <keyname here> not found!`
 
 we use the **langr-key** attribute to tell the language manager the language key.
 LangR also automatically makes itself globally available on the site, so you can use it statically anywhere on the imported html documents see in the button examples
