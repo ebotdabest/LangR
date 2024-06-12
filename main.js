@@ -3,25 +3,36 @@ export class LangR {
         this.path = args.rootPath;
         this.key = args.currentKey;
         this.customPath = args.bigPath;
+        this.forceRename = args.forceRename;
 
         this.useAutoPath = false;
         if (this.customPath == null) {
             let currentUrl = window.location.href;
             let url = new URL(currentUrl);
-            let segments = url.pathname.split('/');
-            segments.pop();
-            let fPath = segments.join('/') + '/';
-            this.customPath = url.origin + fPath;
+            this.customPath = url.origin;
             this.useAutoPath = true;
         }
+
+        if (this.forceRename == null) {
+            this.forceRename = false;
+        }
+
         this.loadLang()
+        window.LangR = LangR
     }
 
     static updateLang(langData) {
         document.querySelectorAll("[langr-key]").forEach(el => {
             const langrKey = el.getAttribute("langr-key");
             try {
-                el.innerText = langData[langrKey];
+                if (langData[langrKey] != null) {
+                    el.innerText = langData[langrKey];
+                }else {
+                    if (this.forceRename) {
+                        el.innerText = "Key " + langrKey + " not found!";
+                    }
+                }
+
             }catch (e) {
                 console.error("[LangR] ERROR: The key " + langrKey + " does not exist!");
             }
