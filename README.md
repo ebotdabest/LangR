@@ -92,7 +92,8 @@ it will also refresh the text on the entire page
 # Using custom webservers
 if you contain your language assets on a separate server, LangR can handle that as well
 ```html
-<script>
+<script type="module">
+        import { LangR } from 'https://ebotdabest.github.io/LangR/langr.js';
         document.addEventListener("DOMContentLoaded", function () {
             LangR.init({
                 rootPath: "langs",
