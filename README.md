@@ -5,8 +5,8 @@ LangR is a lightweight front-end language manager for html written fully in java
 Get started:
 Copy this code into the **head** tag:
 ```javascript
-<script src="https://raw.githubusercontent.com/ebotdabest/LangR/master/main.js"></script>
-<script>
+<script type="module">
+        import { LangR } from 'https://ebotdabest.github.io/LangR/langr.js';
         document.addEventListener("DOMContentLoaded", function () {
             LangR.init({
                 rootPath: "langs",
@@ -54,8 +54,8 @@ Example use in html:
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="main.js"></script>
-    <script>
+    <script type="module">
+        import { LangR } from 'https://ebotdabest.github.io/LangR/langr.js';
         document.addEventListener("DOMContentLoaded", function () {
             LangR.init({
                 rootPath: "langs",
