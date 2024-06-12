@@ -2,7 +2,7 @@
 
 LangR is a lightweight front-end language manager for html written fully in javascript
 
-Get started:
+# Get started
 Copy this code into the **head** tag:
 ```javascript
 <script type="module">
@@ -26,6 +26,8 @@ root/
 └── index.html
 ```
 
+# Language json setup
+
 with the code avobe it will look for: **langs**/**en_us**.json
 An example of a english language json:
 ```json
@@ -47,6 +49,7 @@ and another in italian (i used google translate):
 ```
 however we need to make sure key's stay consistent.
 
+# Full html example
 Example use in html:
 ```html
 <!DOCTYPE html>
@@ -73,6 +76,7 @@ Example use in html:
 </body>
 </html>
 ```
+# Changing language
 
 And changing language can be seen here:
 ```html
@@ -85,6 +89,7 @@ And changing language can be seen here:
 ```
 it will also refresh the text on the entire page
 
+# Using custom webservers
 if you contain your language assets on a separate server, LangR can handle that as well
 ```html
 <script>
@@ -95,13 +100,12 @@ if you contain your language assets on a separate server, LangR can handle that 
                 bigPath: "http://mycdn.domain.tld/langs"
             });
         });
-    </script>
+</script>
 ```
 however, in here, the rootPath isn't relevant, here we will need to define the full url.
 
-
 we use the **langr-key** attribute to tell the language manager the language key.
-
+LangR also automatically makes itself globally available on the site, so you can use it statically anywhere on the imported html documents see in the button examples
 
 Made by a fifteen year old in 30 minutes without AI, by the way so negativity will be retaliated.
 (Unless constructive)
