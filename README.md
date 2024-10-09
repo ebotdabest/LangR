@@ -30,8 +30,8 @@ root/
 
 # Language json setup
 
-with the code avobe it will look for: **langs**/**en_us**.json
-An example of a english language json:
+with the code above it will look for: **langs**/**en_us**.json
+An example of an english language json:
 ```json
 {
   "index.topbar": "Main site",
@@ -49,7 +49,7 @@ and another in italian (i used google translate):
   "index.buttons.third": "Sono il terzo pulsante"
 }
 ```
-however we need to make sure key's stay consistent.
+however we need to make sure the keys stay consistent.
 
 # Full html example
 Example use in html:
@@ -79,8 +79,6 @@ Example use in html:
 </html>
 ```
 # Changing language
-
-And changing language can be seen here:
 ```html
 <body>
     <h1 langr-key="index.random-text">I will contain random text</h1>
@@ -89,7 +87,7 @@ And changing language can be seen here:
     <button onclick="LangR.changeLang('hu_hu')" langr-key="buttons.switch.hu">Switch to hungarian</button>
 </body>
 ```
-it will also refresh the text on the entire page
+this will also refresh the text on the entire page
 
 # Using custom webservers
 if you contain your language assets on a separate server, LangR can handle that as well
@@ -126,5 +124,5 @@ then if the **langr-key** is not found instead of leaving the tag alone it will 
 we use the **langr-key** attribute to tell the language manager the language key.
 LangR also automatically makes itself globally available on the site, so you can use it statically anywhere on the imported html documents see in the button examples
 
-Made by a fifteen year old in 30 minutes without AI, by the way so negativity will be retaliated.
-(Unless constructive)
+Made by a fifteen year old in 30 minutes without AI, so negativity will be retaliated.
+(Unless constructive ofc)
